@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+
+    <title>Frontend Mentor - REST Countries API with color theme switcher</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+        <script src="js/helper.js" defer></script>
+
+<script  src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="nav">
+      <a href="#">Where in the world?</a>
+      <div class="toggle-theme">
+<i class="fa-regular fa-moon iconTheme"></i>        <span class="spanTheme">Dark Mode</span>
+      </div>
+    </header>
+    <section class="container">
+<nav class="search-bar">
+
+  <form class="search">
+      <input type="text" placeholder="Search for a country">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <button>submit</button>
+  </form>
+  <div class="drowpdown">
+    <select class="drowpdownCountries" name="countries" id="">
+  <option class="option" value="all" >All </option>
+      <option class="option" value="africa">Africa </option>
+      <option class="option" value="americas">Americas </option>
+      <option class="option" value="asia">Asia </option>
+      <option class="option" value="europe">Europe </option>
+  
+      <option class="option" value="oceania">Oceania </option>
+    </select>
+  <svg focusable="false" viewBox="0 0 104 128" width="25" height="35" class="icon">
+    <path d="m2e1 95a9 9 0 0 1 -9 9 9 9 0 0 1 -9 -9 9 9 0 0 1 9 -9 9 9 0 0 1 9 9zm0-3e1a9 9 0 0 1 -9 9 9 9 0 0 1 -9 -9 9 9 0 0 1 9 -9 9 9 0 0 1 9 9zm0-3e1a9 9 0 0 1 -9 9 9 9 0 0 1 -9 -9 9 9 0 0 1 9 -9 9 9 0 0 1 9 9zm14 55h68v1e1h-68zm0-3e1h68v1e1h-68zm0-3e1h68v1e1h-68z"></path>
+  </svg>
+  </div>
+</nav>
+<div class="spinner hidden"></div>
+<div class="row">
+
+ 
+</div>
+<div class="btns">
+  <button class="btn btn-prev">
+        <i class="fa-sharp fa-solid fa-arrow-left"></i> <span>
+          prev
+        </span>
+
+  </button>
+
+  <button class="btn btn-next">
+    <span>
+      next
+    </span>
+     <i class="fa-sharp fa-solid fa-arrow-right"></i>
+  </button>
+</div>
+    </section>
+</body>
+</html>
